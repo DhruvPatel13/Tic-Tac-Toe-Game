@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #d0ccd0;
+  text-align: center;
+}
+h1 {
+  margin-top: 10px;
+}
+.container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game {
+  height: 70vmin;
+  width: 70vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem hsl(0, 0%, 0%, 0.7);
+  font-size: 5rem;
+  color: #1c6e8c;
+  background-color: #274156;
+  cursor: pointer;
+}
+#reset-btn {
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1.25rem;
+  color: white;
+  background-color: #191913;
+  border-radius: 1rem;
+  border: none;
+}
+#reset-btn:hover {
+  color: white;
+  background-color: hsl(60, 14%, 15%);
+}
+#reset-btn:active {
+  color: #191913;
+  background-color: white;
+}
+#new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  color: white;
+  background-color: #191913;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+}
+#new-btn:hover {
+  color: white;
+  background-color: hsl(60, 14%, 15%);
+}
+#new-btn:active {
+  color: #191913;
+  background-color: white;
+}
+#msg {
+  color: hsl(207, 38%, 25%);
+  font-size: 5vmin;
+}
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .container{
+    height: 75vh;
+  }
+  .box {
+    font-size: 4rem;
+  }
+  .msg-container {
+    height: 150vmin;
+  }
+  #new-btn {
+    font-size: 1rem;
+    padding: 15px 20px;
+  }
+  #reset-btn {
+    padding: 15px 20px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 650px) {
+    .container{
+        height: 65vh;
+    }
+}
+@media screen and (max-width: 510px) {
+    .container{
+        height: 55vh;
+    }
+  .box {
+    font-size: 2.8rem;
+  }
+  .msg-container {
+    height: 200vmin;
+  }
+  #new-btn {
+    font-size: 0.8rem;
+    padding: 10px 15px;
+  }
+  #reset-btn {
+    font-size: 0.8rem;
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+    .container{
+        height: 45vh;
+    }
+}
